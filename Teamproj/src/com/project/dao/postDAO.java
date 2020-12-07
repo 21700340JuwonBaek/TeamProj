@@ -9,11 +9,11 @@ import com.project.bean.postVO;
 import com.project.common.JDBCUtil;
 
 public class postDAO {
-private final String M_INSERT = "insert into teamporject (category, photo, title, writer, detail) values (?,?,?,?,?)";
-private final String M_UPDATE = "update teamporject set category=?, photo=?, title=?, writer=?, detail=? where sid=?";
-private final String M_DELETE = "delete from teamporject  where sid=?";
-private final String M_SELECT = "select * from teamporject  where sid=?";
-private final String M_LIST = "select * from teamporject order by sid desc";
+private final String M_INSERT = "insert into teamproject (category, photo, title, writer, detail) values (?,?,?,?,?)";
+private final String M_UPDATE = "update teamproject set category=?, photo=?, title=?, writer=?, detail=? where sid=?";
+private final String M_DELETE = "delete from teamproject  where sid=?";
+private final String M_SELECT = "select * from teamproject  where sid=?";
+private final String M_LIST = "select * from teamproject order by sid desc";
 Connection conn = null;
 PreparedStatement stmt = null;
 ResultSet rs = null;
