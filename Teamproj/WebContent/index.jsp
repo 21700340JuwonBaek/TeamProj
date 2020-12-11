@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>뿌링뿌링</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -17,13 +17,19 @@
     .navbar {
       margin-bottom: 0;
       border-radius: 0;
+	  background-color: #A9D0F5;
     }
     
     /* Add a gray background color and some padding to the footer */
     footer {
-      background-color: #f2f2f2;
+      background-color: green;
       padding: 25px;
     }
+    
+    .navbar-inverse{
+    	background-color: #A9D0F5;
+    }
+    
   </style>
   <script>
 	function delete_ok(id){
@@ -48,17 +54,17 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#">Portfolio</a>
+      <a class="navbar-brand" href="#">Blog</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">Contact</a></li>
+        <li class="active" style="background-color: #819FF7"><a href="#">Food</a></li>
+        <li><a href="#">Movie</a></li>
+        <li><a href="#">Travel</a></li>
+        <li><a href="#">Shopping</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li><a href="addform.jsp"> 포스트 작성</a></li>
       </ul>
     </div>
   </div>
@@ -66,8 +72,8 @@
 
 <div class="jumbotron">
   <div class="container text-center">
-    <h1>My Portfolio</h1>      
-    <p>Some text that represents "Me"...</p>
+    <h1>Our Blog</h1>      
+    <p>자유롭게 포스트를 작성해주세요:)</p>
   </div>
 </div>
   <c:forEach items="${list}" var="u"> 

@@ -6,7 +6,6 @@
 
 <% request.setCharacterEncoding("utf-8"); %>
 
-<!-- editform으로부터 받아온 정보를 MemberVO객체 u에 저장합니다. -->
 
 <%
 	
@@ -14,5 +13,5 @@
 	FileUpload upload = new FileUpload();
 	postVO u = upload.uploadPhoto(request);
 	int i=postDao.updatePost(u);
-	response.sendRedirect("list.jsp");
+	response.sendRedirect("view.jsp?sid="+u.getSid());
 %>

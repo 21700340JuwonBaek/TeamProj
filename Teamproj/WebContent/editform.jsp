@@ -14,19 +14,20 @@
 </head>
 <style>
 body{
-font-family: 'Caveat', 'Nanum Pen Script',cursive;
-font-size:30px;
+	font-family: "Lucida Blackletter", 'Nanum Gothic', monospace;
+	font-size:30px;
+	padding: 20px;
 }
 
 th{
-text-align: center;
-background-color:#353b3d;
-color:white;
-padding-right: 10px;
+	text-align: center;
+	background-color:#2E64FE;
+	color:white;
+	padding-right: 8px;
 
 }
 input{
-border:hidden;
+	border:hidden;
 }
 
 
