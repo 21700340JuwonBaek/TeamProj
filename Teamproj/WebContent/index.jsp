@@ -11,8 +11,19 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Nanum+Myeongjo&display=swap&subset=korean" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+  <link href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Alegreya Sans SC' rel='stylesheet'>
+  
 
   <style>
+  
+    *{
+        font-family: "Alegreya Sans SC", 'Nanum Gothic', monospace;    
+    }
+    
     /* Remove the navbar's default margin-bottom and rounded borders */ 
     .navbar {
       margin-bottom: 0;
@@ -28,6 +39,10 @@
     
     .navbar-inverse{
     	background-color: #A9D0F5;
+    }
+    
+    .active{
+    	background-color: #819FF7;
     }
     
   </style>
@@ -58,13 +73,13 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active" style="background-color: #819FF7"><a href="#">Food</a></li>
+        <li class="active"><a href="#">Food</a></li>
         <li><a href="#">Movie</a></li>
         <li><a href="#">Travel</a></li>
         <li><a href="#">Shopping</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="addform.jsp"> 포스트 작성</a></li>
+        <li><a href="addform.jsp"> New post</a></li>
       </ul>
     </div>
   </div>

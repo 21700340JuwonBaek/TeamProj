@@ -3,16 +3,19 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Nanum+Myeongjo&display=swap&subset=korean" rel="stylesheet">
+
   <link href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css" rel="stylesheet">
  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" 
  integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-<link href="https://fonts.googleapis.com/css2?family=Caveat&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
-<meta charset="UTF-8">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+  <link href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Alegreya Sans SC' rel='stylesheet'><meta charset="UTF-8">
 <title>게시글 작성</title>
 </head>
 <style>
 body{
-	font-family: "Lucida Blackletter", 'Nanum Gothic', monospace;
+	font-family: "Alegreya Sans SC", 'Nanum Gothic', monospace;
 	font-size: 30px;
 	padding: 20px;
 }

@@ -6,14 +6,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+  <link href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Alegreya Sans SC' rel='stylesheet'>
  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" 
  integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
 <meta charset="UTF-8">
+
 <title>View</title>
+
 </head>
+
 <style>
+*{
+    font-family: "Alegreya Sans SC", 'Nanum Gothic', monospace;    
+}
+
 body{
 	font-size: 30px;
 	padding: 20px;
@@ -29,37 +38,37 @@ th{
 
 }
 #writer{
-float: right;
-margin-right : 100px;
+	float: right;
+	margin-right : 100px;
 }
 
 img{
-width : 200px;
-height : 200px;
+	width : 200px;
+	height : 200px;
 }
 
 button{
-float : right;
-font-size : 15px;
+	float : right;
+	font-size : 15px;
 }
 
 #remove{
-margin-right : 0px;
+	margin-right : 0px;
 }
 
 #title{
-height : 100px;
-background-color: #A9D0F5;
-color: white;
-line-height:100px;
+	height : 100px;
+	background-color: #A9D0F5;
+	color: white;
+	line-height:100px;
 }
 
 #content{
-position: relative;
-left : 300px;
-margin-right:0px;
-height : 200px;
-width: 200px;
+	position: relative;
+	left : 300px;
+	margin-right:0px;
+	height : 200px;
+	width: 200px;
 }
 
 </style>
@@ -73,7 +82,7 @@ width: 200px;
 %>
 
 
-<h1 id='title'>저의 블로그에 오신 것을 환영합니다!!</h1>
+<h1 id='title'>저의 블로그에 오신 것을 환영합니다:)</h1>
 <br>
 
 
@@ -85,7 +94,7 @@ ${vo.getTitle()}</h1>
 <button type="button" class="btn btn-danger" id = 'remove' onclick="location.href='delete_ok.jsp?sid=${vo.getSid() }'">삭제하기</button>
 <button type="button"class="btn btn-warning" id = 'edit' onclick="location.href='editform.jsp?sid=${vo.getSid() }'">수정하기</button>
 
-<button type="button" class="btn btn-primary" id = 'back' onclick="location.href='index.jsp'">뒤로가기</button>
+<button type="button" class="btn btn-primary" id = 'back' onclick="location.href='index.jsp'">목록으로</button>
 <br>
 <div class="card" id='content'>
 <c:if test="${vo.getPhoto() ne '' }"><br/>
