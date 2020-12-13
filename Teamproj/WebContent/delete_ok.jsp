@@ -16,6 +16,6 @@
 		
 		postDao.deletePost(u);
 	}
-	response.sendRedirect("view.jsp");
+	response.sendRedirect("index.jsp");
 %>
 
